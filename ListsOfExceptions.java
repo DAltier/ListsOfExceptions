@@ -11,9 +11,9 @@ public class ListsOfExceptions {
 
     for(int i = 0; i < myList.size(); i++) {
       try {
-        int castedValue = (int) myList.get(i);
+        Integer castedValue = (Integer) myList.get(i);
         System.out.println("Converted to integer: " + castedValue);
-      } catch (Exception e) {
+      } catch (ClassCastException e) {
         System.out.println("Unable to convert to integer: " + myList.get(i));
       }
     }
